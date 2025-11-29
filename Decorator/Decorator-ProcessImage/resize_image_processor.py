@@ -1,11 +1,11 @@
-from re import I
-from image_processor_interface import ImageProcessorInterface
 
-class ResizeImageProcessor(ImageProcessorInterface):
+from imageProcesorDecorator import ImageProcessorDecorator
+
+class ResizeImageProcessor(ImageProcessorDecorator):
     """Processador de imagem com redimensionamento"""
 
-    def __init__(self, imageProcessor: ImageProcessorInterface):
-        self._imageProcessor = imageProcessor
+   # def __init__(self, imageProcessor: ImageProcessorInterface): - ja esta feito na classe pai
+    #    self._imageProcessor = imageProcessor
 
     def process(self, imagePath: str) -> str:
         ImageProcessedPath = self._imageProcessor.process(imagePath)

@@ -1,8 +1,8 @@
 from image_processor_interface import ImageProcessorInterface
 
 class BasicImageProcessor(ImageProcessorInterface):
+    #  Objeto concreto base
     """Processador de imagem básico"""
-        
     def process(self, imagePath: str) -> str:
         newImagePath = "/uploads/file_processed.jpg"  
         #TODO: Implement the basic image processing logic

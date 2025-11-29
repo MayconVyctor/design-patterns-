@@ -1,10 +1,10 @@
 from processadorImagem import ProcessadorImagem
 class MarcaDagua(ProcessadorImagem):
-    def __init__(self, imagem: ProcessadorImagem):
-        self.imagem = imagem
+    ##def __init__(self, imagemPathProcessadorImagem):
+    #    self.imagemPath = imagemPath
 
-    def processar(self, caminho):
-        novaImagem = "marcaDagua.jpg"
-        imagemRecebida = imagem.processar(caminho)
-        print(f"Transforma {imagemRecebida} para com {marcaDagua}")
-        print(f"de {caminho} para {caminhio}")
+    def processar(self, imagem: str) -> str:
+        imagemProcessada = self._processadorIMG("marcaDagua.jpg")
+        novaImagem = "/uploads/marcaDagua_file.jpg"
+        print(f"Processa a imagem de {imagemProcessada} para {novaImagem}")
+        return novaImagem

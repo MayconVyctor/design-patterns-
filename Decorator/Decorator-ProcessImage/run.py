@@ -6,8 +6,13 @@ print("=== Teste do Padrão Decorator ===\n")
 
 if __name__ == "__main__":
     imagePath = "/temp/file.jpg"
+    #composicao 0
+    print(" Composicao 0: basico")
+    image = ResizeImageProcessor(BasicImageProcessor())
+    image.process(imagePath)
+
     #Composicao 1
-    print("Composicao 1:")
+    print("\n\nComposicao 1:")
     imageProcessor = BasicImageProcessor()
     imageProcessor = WatermarkImageProcessor(imageProcessor)
     imageProcessor = ResizeImageProcessor(imageProcessor)

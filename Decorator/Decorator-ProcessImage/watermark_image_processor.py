@@ -1,11 +1,11 @@
-from re import I
-from image_processor_interface import ImageProcessorInterface
 
-class WatermarkImageProcessor(ImageProcessorInterface):
+from imageProcesorDecorator import ImageProcessorDecorator
+
+class WatermarkImageProcessor(ImageProcessorDecorator):
     """Processador de imagem com marca d'água"""
 
-    def __init__(self, imageProcessor: ImageProcessorInterface):
-        self._imageProcessor = imageProcessor
+    #def __init__(self, imageProcessor: ImageProcessorInterface):   - ja foi criando na classe pai
+     #   self._imageProcessor = imageProcessor
 
     def process(self, imagePath: str) -> str:
         ImageProcessedPath = self._imageProcessor.process(imagePath)
