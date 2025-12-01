@@ -1,4 +1,4 @@
-from IntroDesingPatersn import BDManager
+from Singleton.SingletonIntroducao.IntroDesingPatersn import BDManager
 
 bd1 = BDManager()
 conexao1 = bd1.getInstancia("/caminho!")

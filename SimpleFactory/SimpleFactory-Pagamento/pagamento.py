@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-# Hierarquia de pagamentos
 
 class Pagamento(ABC):
     @abstractmethod
